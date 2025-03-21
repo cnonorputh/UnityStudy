@@ -17,7 +17,7 @@ public class InspectorScriptsTest : MonoBehaviour
     public int Delay { get { return delayValue; } set { delayValue = value; } }
     [Required]
     public string Name;
-    [Searchable]
+    [Searchable,FoldoutGroup("属性"),FoldoutGroup("属性/列表")]
     public List<int> ints = new List<int> { 0, 1, 1, 2, 2, 3, 3, };
 
     private IEnumerable<float> GetValue()
